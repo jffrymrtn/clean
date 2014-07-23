@@ -1,7 +1,7 @@
 name: your blog name
 markdown: redcarpet
 highlighter: pygments
-url: your blog url
+url: http://jeffreymartin.ca/clean
 paginate: 1
 paginate_path: "/:num"
 baseurl: /
