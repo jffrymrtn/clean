@@ -10,7 +10,7 @@ categories: post
 
 "Clean" is a minimal and simple theme for [Jekyll](http://jekyllrb.com/) inspired slightly by Google's Material Design (hovering social buttons) tweaked to look more clean and neutral.
 
-[Demo Website]()
+[Demo Website](http://jffrymrtn.github.io/clean)
 
 ## Using Clean
 
@@ -68,7 +68,7 @@ Add posts as you normally would in Jekyll. If you don't know how yet, take a loo
 
 ## Contributing to this Project on GitHub
 
-I'm open to contributions and would love to work with people who think this theme could be better. Just give me a heads up to what you're doing by opening an [issue]().
+I'm open to contributions and would love to work with people who think this theme could be better. Just give me a heads up to what you're doing by opening an [issue](https://github.com/jffrymrtn/clean/issues).
 
 ## Questions, Comments, Suggestions, Anything Else
 
