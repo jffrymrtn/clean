@@ -1,0 +1,359 @@
+@font-face {
+  font-family: RobotoCondensed-Regular;
+  src: url('/fonts/Roboto/RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+  font-family: RobotoCondensed-Bold;
+  src: url('/fonts/Roboto/RobotoCondensed-Bold.ttf');
+}
+
+@font-face {
+  font-family: RobotoSlab-Regular;
+  src: url('/fonts/Roboto/RobotoSlab-Regular.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url('/fonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  color: #515151;
+}
+
+body {
+  background-color: #fff;
+  text-align: center;
+  font-family: Roboto-Regular;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.horiz-list {
+  display: inline-block;
+  list-style: none;
+  list-style-type: none;
+}
+
+.page-title {
+  font-family: Roboto-Medium;
+  font-size: 40px;
+  color: #515151;
+  line-height: 47px;
+}
+
+/*****************************************************************************/
+/*
+/* Navbar
+/*
+/*****************************************************************************/
+
+.navbar {
+  background: rgba(255,255,255,0.8);
+  font-family: RobotoCondensed-Bold;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-animation-delay: 300ms;
+  transition: all 400ms ease;
+}
+
+#header {
+  width: 100%;
+}
+
+.title {
+  font-family: RobotoCondensed-Bold;
+  font-size: 70px;
+  line-height: 70px;
+  color: #515151;
+  text-transform: uppercase;
+  transition: all 400ms ease;
+}
+
+.subtitle {
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  color: #888;
+  line-height: 20px;
+  transition: all 400ms ease;
+}
+
+.shrink-text {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.shrink {
+  height: 20px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.nav-item {
+  font-size: 17px;
+  line-height: 20px;
+  display: inline-block;
+}
+
+.nav-item a {
+  color: #515151;
+  border: 0;
+}
+
+.nav-item a:hover {
+  color: #fa6900;
+}
+
+.nav-item:not(:first-child) {
+  padding-left: 50px;
+}
+
+.indicator {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #00b4ff;
+  margin: 8px auto;
+  opacity: 0;
+}
+
+/*****************************************************************************/
+/*
+/* Hovering social buttons
+/*
+/*****************************************************************************/
+
+#social {
+  position: absolute;
+  bottom: -25px;
+  right: 70px;
+  line-height: 50px;
+}
+
+/*
+ * ----- SOCIAL BUTTONS -----
+ * Note: For every new social button you add or remove, make sure to adjust
+ * their animation delays (50ms between each button).
+*/
+
+#fb {
+  background: #3B579D;
+  -webkit-animation-delay: 200ms;
+}
+
+#twitter {
+  background: #0099FF;
+  -webkit-animation-delay: 250ms;
+}
+
+#github {
+  background: #000000;
+  -webkit-animation-delay: 300ms;
+}
+
+#email {
+  background: #E04A11;
+  -webkit-animation-delay: 350ms;
+}
+
+.social-item {
+  display: inline-block;
+}
+
+.social-item:not(:first-child) {
+  padding-left: 15px;
+}
+
+.social-button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 2px rgba(100, 100, 100, 0.5);
+  cursor: pointer;
+}
+
+.social-img {
+  max-width: 32px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*****************************************************************************/
+/*
+/* Pagination
+/*
+/*****************************************************************************/
+
+.pagination {
+  width: 50%;
+  margin: 0px auto;
+  margin-bottom: 50px;
+  text-align: right;
+}
+
+/* Previous link */
+.pagination a {
+  margin-left: 50px;
+  color: #bdbdbd;
+}
+
+.pagination a:hover {
+  color: #424242;
+}
+/*****************************************************************************/
+/*
+/* Animations
+/*
+/*****************************************************************************/
+
+.fadedown {
+  -webkit-animation-name: FadeDown;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-duration: 800ms;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes FadeDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, -20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0px);
+  }
+}
+
+@-moz-keyframes FadeDown {
+  0% {
+    opacity: 0.2;
+    -moz-transform: translate(0, -20px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translate(0, 0px);
+  }
+}
+
+.fadeup {
+  -webkit-animation-name: FadeUp;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-duration: 800ms;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes FadeUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0px);
+  }
+}
+
+@-moz-keyframes FadeUp {
+  0% {
+    opacity: 0.2;
+    -moz-transform: translate(0, 20px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translate(0, 0px);
+  }
+}
+
+.fadein {
+  -webkit-animation-name: FadeIn;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-duration: 500ms;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes FadeIn {
+  0% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.popin {
+  -webkit-animation-name: PopIn;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-duration: 800ms;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes PopIn {
+  0% {
+    -webkit-transform: scale(0);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes PopIn {
+  0% {
+    -moz-transform: scale(0);
+  }
+
+  50% {
+    -moz-transform: scale(1.1);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+  }
+}

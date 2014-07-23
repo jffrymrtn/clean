@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="author" content="" />
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Clean</title>
+      <meta name="viewport" content="width=device-width, minimal-ui">
+
+      <!-- syntax highlighting CSS -->
+      <link rel="stylesheet" href="/css/syntax.css">
+
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/post.css">
+      <link rel="stylesheet" href="/css/responsive.css">
+
+  </head>
+  <body>
+      <div class="navbar">
+        <div id="social">
+          <ul class="horiz-list">
+            <!-- Social buttons -->
+            <!-- Feel free to add or remove as much of these as you want -->
+            <li class="social-item"><div id="fb" class="social-button popin"><a href=""><img src="/images/social/fb.png" class="social-img"></a></div></li>
+            <li class="social-item"><div id="twitter" class="social-button popin"><a href=""><img src="/images/social/twitter.png" class="social-img"></a></div></li>
+            <li class="social-item"><div id="github" class="social-button popin"><a href=""><img src="/images/social/github.png" class="social-img"></a></div></li>
+            <li class="social-item"><div id="email" class="social-button popin"><a href="mailto:"><img src="/images/social/email.png" class="social-img"></a></div></li>
+          </ul>
+        </div>
+
+        <div id="header" class="fadein">
+          <a href="/"><p class="title">Clean</p></a>
+          <p class="subtitle">A Jekyll theme</p>
+        </div>
+      </div>
+
+    <div class="site">
+
+      <div id="content">
+        <div class="home" id="home">
+  <div class="category-content">
+    
+      <div id="post-page">
+        
+          <img id="post-hero" src="/images/projects/hero.png">
+        
+        
+         <h1 id="post-title">A Minimal Jekyll Theme</h1>
+      
+         <div id="post-description">
+           <h2>Intro</h2>
+
+<p>&quot;Clean&quot; is a minimal and simple theme for <a href="http://jekyllrb.com/">Jekyll</a> inspired slightly by Google&#39;s Material Design (hovering social buttons) tweaked to look more clean and neutral.</p>
+
+<p><a href="">Demo Website</a></p>
+
+<h2>Using Clean</h2>
+
+<h3>Installation</h3>
+
+<ol>
+<li>Fork the GitHub repository and clone it to your local machine.</li>
+<li>In your Terminal.app, <code>cd</code> to your Clean repository.</li>
+<li>Run <code>jekyll serve --watch</code>.</li>
+<li>On your browser of choice, go to localhost:4000</li>
+</ol>
+
+<h3>Making Clean Your Own</h3>
+
+<p>Make sure to configure <code>_config.yml</code> and layouts/default.html to add in your URL, blog&#39;s name, keywords, website title, etc. Otherwise, you&#39;ll be stuck with a blog called, &quot;Your blog name&quot; :).</p>
+
+<p>Here are some files you should change:</p>
+
+<ul>
+<li>_config.yml</li>
+<li>layouts/default.html</li>
+<li>README.md</li>
+</ul>
+
+<h3>Adding and Removing Social Buttons</h3>
+
+<p>There are a default number of four social buttons hovering at the top of the website. You may add or remove any amount of buttons as you want. Here is where you can change them:</p>
+
+<ul>
+<li>Add or remove social buttons&#39; HTML markups at <code>layouts/default.html</code> under the <code>&lt;div id=&quot;social&quot;&gt;</code> tag.</li>
+<li>For every social button you add <strong>or</strong> remove, you need to adjust the animation times (the order and delay in which they fade in on load). Do this in the CSS file <code>css/main.css</code>.
+
+<ul>
+<li>Note: There is a 50ms delay between each social button, starting at 200ms for the first element.</li>
+</ul></li>
+</ul>
+
+<p>For example:</p>
+
+<p>If you remove the Facebook button, you&#39;ll be left with three social buttons: Twitter, GitHub, and Email. You&#39;ll need to go to <code>css/main.css</code> and remove the CSS for <code>#fb</code> and adjust the rest so that it looks like this:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">#twitter {
+  background: #0099FF;
+  -webkit-animation-delay: 200ms;
+}
+#github {
+  background: #000000;
+  -webkit-animation-delay: 250ms;
+}
+#email {
+  background: #E04A11;
+  -webkit-animation-delay: 300ms;
+}
+</code></pre></div>
+<h3>Pagination</h3>
+
+<p>This theme automatically paginates your posts (if you have more than 1 post) at <code>url/#</code>.</p>
+
+<h3>Adding Posts</h3>
+
+<p>Add posts as you normally would in Jekyll. If you don&#39;t know how yet, take a look at Jekyll&#39;s <a href="http://jekyllrb.com/docs/posts/">documentations</a>.</p>
+
+<h2>Contributing to this Project on GitHub</h2>
+
+<p>I&#39;m open to contributions and would love to work with people who think this theme could be better. Just give me a heads up to what you&#39;re doing by opening an <a href="">issue</a>.</p>
+
+<h2>Questions, Comments, Suggestions, Anything Else</h2>
+
+<p>You can get in touch with my the easiest on Twitter: <a href="https://twitter.com/jffrymrtn">@jffrymrtn</a>.</p>
+
+<h2>License</h2>
+
+<p>The Jekyll Theme, Clean is licensed under the MIT license:</p>
+
+<p>The MIT License (MIT)</p>
+
+<p>Copyright (c) 2014 Jeff Martin</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<!-- Pagination links -->
+
+      </div>
+
+    </div>
+  </body>
+  <script type="text/javascript" src="/js/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript" src="/js/main.js"></script>
+</html>

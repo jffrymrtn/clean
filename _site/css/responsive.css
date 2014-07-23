@@ -1,0 +1,116 @@
+@media (max-width:1400px) {
+  #web-page .post-thumbnail {
+    max-width: 500px;
+  }
+}
+
+@media (max-width:1200px) {
+  .post-container:not(:first-child) {
+    margin-left: 30px;
+  }
+
+  #web-page .post-thumbnail {
+    max-width: 400px;
+  }
+}
+
+@media (max-width:1050px) {
+  .post-container:not(:first-child) {
+    margin-left: 25px;
+  }
+
+  .post-thumbnail {
+    max-height: 400px;
+  }
+
+  #web-page .post-thumbnail {
+    max-width: 350px;
+  }
+
+  #project-page {
+    width: 70% !IMPORTANT;
+  }
+}
+
+@media (max-width:900px) {
+  .post-thumbnail {
+    max-height: 300px;
+  }
+
+  #web-page .post-thumbnail {
+    max-width: 250px;
+  }
+
+  #social {
+    right: 40px;
+  }
+  
+  .social-item:not(:first-child) {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width:720px) {
+  #whoami {
+    font-size: 45px;
+  }
+
+  #whatido {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .nav-item:not(:first-child) {
+    padding-left: 10px;
+  }
+  
+  .category-page {
+    padding: 20px 40px 0px 40px;
+  }
+
+  .page-title {
+    font-size: 25px;
+  }
+
+  .post-container {
+    display: block;
+    text-align: center;
+  }
+
+  .post-container:not(:first-child),
+  #web-page .post-container:not(:first-child) {
+    margin-top: 50px;
+    margin-left: 0px !IMPORTANT;
+  }
+
+  .post-thumbnail {
+    max-height: 350px;
+  }
+
+  #web-page .post-thumbnail {
+    max-width: 220px;
+  }
+
+  #social {
+    line-height: 40px;
+    right: 20px;
+  }
+
+  .social-button {
+    height: 40px;
+    width: 40px;
+  }
+
+  .social-img {
+    max-width: 25px;
+  }
+
+  #project-page p img,
+  #inline-images-container div .post-image-inline {
+    max-width: 200px !IMPORTANT;
+  }
+  
+  #project-page p video {
+    max-width: 250px !IMPORTANT;
+  }
+}

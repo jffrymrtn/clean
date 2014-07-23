@@ -1,0 +1,101 @@
+#post-page {
+  width: 50%;
+  margin: 20px auto;
+  margin-top: 250px;
+  padding-bottom: 80px;
+  line-height: 35px;
+}
+
+#post-hero {
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+#post-title {
+  margin-top: 100px;
+  text-align: left;
+}
+
+#post-page h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-family: RobotoCondensed-Bold;
+  color: #424242;
+}
+
+#post-page h2,
+#post-page h3 {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  font-family: RobotoCondensed-Bold;
+  color: #bdbdbd;
+  text-align: left;
+}
+
+#post-page p {
+  margin-top: 15px;
+  font-family: RobotoSlab-Regular;
+  color: #515151;
+  text-align: justify;
+}
+
+#post-page ul,
+#post-page ol {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#post-page p img {
+  max-height: 500px;
+  display: block;
+  margin: 50px auto;
+  border: 2px solid #eaeaea;
+}
+
+#post-page p video {
+  max-width: 700px;
+  display: block;
+  margin: 50px auto;
+}
+
+#post-page a {
+  color: #fa6900;
+  border-bottom: 1px solid #fa6900;
+}
+
+#post-page a:hover {
+  color: #fa6900;
+  border-bottom: none;
+}
+
+#post-nav-links {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+pre {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+pre,
+code {
+  color: #7a7a7a;
+  text-align: left;
+}
+
+#inline-images-container {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#inline-images-container div {
+  display: inline;
+}
+
+#inline-images-container div .post-image-inline {
+  max-height: 500px;
+  border: 2px solid #eaeaea;
+}
