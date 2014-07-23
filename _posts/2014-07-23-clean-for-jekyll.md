@@ -74,6 +74,10 @@ I'm open to contributions and would love to work with people who think this them
 
 You can get in touch with my the easiest on Twitter: [@jffrymrtn](https://twitter.com/jffrymrtn).
 
+## Roboto Font
+
+This repository includes the [Roboto Font from Google](http://www.google.com/design/spec/resources/roboto-font.html). The font is owned by them and is licensed under the [Apache License V2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
+
 ## License
 
 The Jekyll Theme, Clean is licensed under the MIT license:
