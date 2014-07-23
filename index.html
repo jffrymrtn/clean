@@ -7,7 +7,7 @@ title: Clean
     {% for post in paginator.posts %}
       <div id="post-page">
         {% if post.hero %}
-          <img id="post-hero" src="/images/posts/{{ post.hero }}">
+          <img id="post-hero" src="{{ site.url }}/images/posts/{{ post.hero }}">
         {% endif %}
         
          <h1 id="post-title">{{ post.title }}</h1>

@@ -4,3 +4,4 @@ highlighter: pygments
 url: http://jeffreymartin.ca/clean
 paginate: 1
 paginate_path: "/:num"
+baseurl: /
